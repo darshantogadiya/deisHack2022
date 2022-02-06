@@ -1,0 +1,315 @@
+body {
+  background: #eee;
+  text-align: center;
+  width: 100%;
+  font-family: 'Myriad Pro', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+}
+.process-box {
+  background: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 2px 2px 7px 0 #00000057;
+}
+.process-left:after {
+  content: '';
+  border-top: 15px solid #ffffff;
+  border-bottom: 15px solid #ffffff;
+  border-left: 15px solid #ffffff;
+  border-right: 15px solid #ffffff;
+  display: inline-grid;
+  position: absolute;
+  right: -15px;
+  top: 42%;
+  transform: rotate(45deg);
+  box-shadow: 3px -2px 3px 0px #00000036;
+  z-index: 1;
+}
+.process-right:after {
+  content: '';
+  border-top: 15px solid #ffffff00;
+  border-bottom: 15px solid #ffffff;
+  border-left: 15px solid #ffffff;
+  border-right: 15px solid #ffffff00;
+  display: inline-grid;
+  position: absolute;
+  left: -15px;
+  top: 42%;
+  transform: rotate(45deg);
+  box-shadow: -1px 1px 3px 0px #0000001a;
+  z-index: 1;
+}
+.process-step {
+  background: #00bcd4;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  height: 100%;
+  padding-top: 8px;
+  position: relative;
+  top: -26px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: -6px 8px 0px 0px #00000014;
+}
+.process-point-right {
+  background: #ffffff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 8px solid #00bcd4;
+  box-shadow: 0 0 0px 4px #5c5c5c;
+  margin: auto 0;
+  position: absolute;
+  bottom: 40px;
+  left: -63px;
+}
+.process-point-right:before {
+  content: '';
+  height: 144px;
+  width: 11px;
+  background: #5c5c5c;
+  display: inline-grid;
+  transform: rotate(36deg);
+  position: relative;
+  left: -50px;
+  top: -0px;
+}
+.process-point-left {
+  background: #ffffff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 8px solid #00bcd4;
+  box-shadow: 0 0 0px 4px #5c5c5c;
+  margin: auto 0;
+  position: absolute;
+  bottom: 40px;
+  right: -63px;
+}
+.process-point-left:before {
+  content: '';
+  height: 144px;
+  width: 11px;
+  background: #5c5c5c;
+  display: inline-grid;
+  transform: rotate(-38deg);
+  position: relative;
+  left: 50px;
+  top: 0px;
+}
+
+.process-last:before {
+  display: none;
+}
+.process-box p {
+  z-index: 9;
+}
+.process-step p {
+  font-size: 20px;
+}
+.process-step h2 {
+  font-size: 39px;
+}
+.process-step:after {
+  content: '';
+  border-top: 8px solid #04889800;
+  border-bottom: 8px solid #048898;
+  border-left: 8px solid #04889800;
+  border-right: 8px solid #048898;
+  display: inline-grid;
+  position: absolute;
+  left: -16px;
+  top: 0;
+}
+.process-step:before {
+  /* content: ''; */
+  border-top: 8px solid #ff000000;
+  border-bottom: 8px solid #048898;
+  border-left: 8px solid #048898;
+  border-right: 8px solid #ff000000;
+  display: inline-grid;
+  position: absolute;
+  right: -16px;
+  top: 0;
+}
+.process-line-l {
+  background: white;
+  height: 4px;
+  position: absolute;
+  width: 136px;
+  right: -153px;
+  top: 64px;
+  z-index: 9;
+}
+.process-line-r {
+  background: white;
+  height: 4px;
+  position: absolute;
+  width: 136px;
+  left: -153px;
+  top: 63px;
+  z-index: 9;
+}
+
+#header {
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+}
+#header li {
+  display: inline-block;
+  margin-right: 25px;
+  font-size: 17px;
+  color: #084b8a;
+  font-weight: bold;
+  cursor: pointer;
+}
+#header #site_name {
+  text-align: left;
+  width: 680px;
+  font-size: 35px;
+  margin-left: 20px;
+}
+#home,
+#about,
+#form,
+#contact {
+  margin-top: 50px;
+  width: 90%;
+  margin-left: 5%;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #084b8a;
+  border-radius: 10px;
+}
+#home h1 {
+  font-size: 40px;
+}
+#home p {
+  font-size: 20px;
+}
+#about p {
+  font-size: 20px;
+}
+#contact input[type='text'] {
+  width: 250px;
+  height: 35px;
+  padding-left: 10px;
+  float: left;
+  margin-left: 80px;
+  border: none;
+}
+#contact textarea {
+  float: left;
+  width: 250px;
+  height: 35px;
+  margin-left: 20px;
+  border: none;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+#contact input[type='submit'] {
+  float: left;
+  margin-left: 20px;
+  height: 35px;
+  width: 100px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+}
+
+ {
+  box-sizing: border-box;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    #ee7724,
+    #d8363a,
+    #dd3675,
+    #b44593
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
